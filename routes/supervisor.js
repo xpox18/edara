@@ -1,5 +1,5 @@
 const requireAdminAuth = require('../middleware/requireAdminAuth');
-const Supervisor = require('../models/Supervisor');
+const Supervisor = require('../db/Supervisor');
 
 // Create a new supervisor
 app.post('/admin/supervisors', requireAdminAuth, async (req, res) => {
