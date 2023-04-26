@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Import the StockRequest model and any other dependencies
-const StockRequest = require('../models/StockRequest');
+const StockRequest = require('../db/StockRequest');
 
 // GET all requests
 router.get('/', async (req, res) => {
