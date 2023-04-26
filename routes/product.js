@@ -1,5 +1,5 @@
 const requireAdminAuth = require('../middleware/requireAdminAuth');
-const Product = require('../models/Product');
+const Product = require('../db/Product');
 
 // Create a new product
 router.post('/admin/products', requireAdminAuth, async (req, res) => {
